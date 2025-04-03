@@ -61,11 +61,11 @@ const WhatsAppWidget = ({
     >
       {/* WhatsApp Chat Popup */}
       <div 
-  className={`absolute bottom-14 bg-white rounded-xl shadow-xl transform transition-all duration-300 ease-in-out mb-4 overflow-hidden ${
-    isOpen ? 'scale-100 opacity-100 visible' : 'scale-90 opacity-0 invisible'
-  }`}
-  style={{ width: '320px', maxWidth: 'calc(100vw - 48px)' }}
->
+        className={`bg-white rounded-xl shadow-xl transform transition-all duration-300 ease-in-out mb-4 overflow-hidden ${
+          isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0 pointer-events-none'
+        }`}
+        style={{ width: '320px', maxWidth: 'calc(100vw - 48px)' }}
+      >
         {/* Header */}
         <div className="bg-[#25D366] p-4 text-white flex items-center justify-between">
           <div className="flex items-center gap-3">

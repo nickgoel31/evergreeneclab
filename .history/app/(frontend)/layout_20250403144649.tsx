@@ -14,7 +14,6 @@ const FrontendLayout = ({children}:{children:React.ReactNode}) => {
 
         <WhatsAppWidget 
           phoneNumber='+917428487870'
-          position='left'
         />
     </>
   )
