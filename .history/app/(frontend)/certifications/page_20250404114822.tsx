@@ -91,7 +91,7 @@ const Certifications = async () => {
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-display font-bold mb-6">Our Commitment to Quality</h2>
               <p className="text-neutral-500 mb-8">
-              Evergreen Enviro Testing LLP is committed to maintaining the highest standards of quality in all our testing and consultancy services. Our certifications and accreditations are regularly reviewed and renewed to ensure ongoing compliance with the latest standards and best practices.
+                Evergreen Enviro Consultancy and Laboratories is committed to maintaining the highest standards of quality in all our testing and consultancy services. Our certifications and accreditations are regularly reviewed and renewed to ensure ongoing compliance with the latest standards and best practices.
               </p>
               
               <div className="grid md:grid-cols-3 gap-6 text-left">

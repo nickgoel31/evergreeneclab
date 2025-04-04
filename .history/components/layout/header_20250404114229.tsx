@@ -145,7 +145,7 @@ const Header = () => {
 
         <Link href="/enquiry" legacyBehavior className="hidden md:block">
           <a>
-            <Button className="bg-primary invisible md:visible hover:bg-primary/90 text-white px-6 py-2 rounded-full transition-transform hover:scale-105 duration-300 shadow-md hover:shadow-lg">
+            <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full transition-transform hover:scale-105 duration-300 shadow-md hover:shadow-lg">
               Send Enquiry
             </Button>
           </a>
@@ -158,24 +158,23 @@ const Header = () => {
           aria-label="Toggle menu"
         >
           <div className="relative w-6 h-6">
-          <span className={cn(
-              "absolute block w-6 h-0.5  transition-all duration-300",
-              isMenuOpen 
-                ? "top-3 rotate-45 bg-white" 
-                : "top-1 bg-current"
-            )}></span>
             <span className={cn(
               "absolute block w-6 h-0.5 bg-current transition-all duration-300",
               isMenuOpen 
                 ? "opacity-0" 
                 : "top-3 opacity-100"
             )}></span>
-           
             <span className={cn(
               "absolute block w-6 h-0.5 bg-white transition-all duration-300",
               isMenuOpen 
-                ? "bottom-2.5 -rotate-45 " 
-                : "bottom-1 bg-current"
+                ? "top-3 rotate-45" 
+                : "top-1"
+            )}></span>
+            <span className={cn(
+              "absolute block w-6 h-0.5 bg-current transition-all duration-300",
+              isMenuOpen 
+                ? "bottom-2.5 -rotate-45" 
+                : "bottom-1"
             )}></span>
           </div>
         </button>

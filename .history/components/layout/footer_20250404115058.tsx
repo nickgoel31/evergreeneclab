@@ -56,7 +56,7 @@ const Footer = () => {
                 <span className="text-white font-bold text-xl">E</span>
               </div>
               <span className="font-display font-semibold text-xl text-white">
-                Evergreen <span className="text-primary">Enviro</span>
+                EE<span className="text-primary">T</span>
               </span>
             </Link>
             <p className="text-neutral-300 mb-6 leading-relaxed">

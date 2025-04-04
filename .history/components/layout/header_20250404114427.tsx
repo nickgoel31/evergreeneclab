@@ -145,7 +145,7 @@ const Header = () => {
 
         <Link href="/enquiry" legacyBehavior className="hidden md:block">
           <a>
-            <Button className="bg-primary invisible md:visible hover:bg-primary/90 text-white px-6 py-2 rounded-full transition-transform hover:scale-105 duration-300 shadow-md hover:shadow-lg">
+            <Button className="bg-primary sm:invisible md:visible hover:bg-primary/90 text-white px-6 py-2 rounded-full transition-transform hover:scale-105 duration-300 shadow-md hover:shadow-lg">
               Send Enquiry
             </Button>
           </a>
