@@ -14,9 +14,12 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
+import { sanityFetch } from "@/sanity/lib/live";
+import { defineQuery } from "next-sanity";
 
-
-
+const INFO_QUERY = defineQuery(`*[
+  _type == "companyInformation"][0]`
+)
 
 type CompanyInformation = {
   name?: string;
@@ -26,7 +29,7 @@ type CompanyInformation = {
   address?: string;
 }
 
-const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
+const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Scroll to top function
@@ -41,6 +44,8 @@ const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
 
   const formattedPhone = phoneNumber.replace(/\D/g, '');
 
+  const [companyInfo, setCompanyInfo] = useState<CompanyInformation>({})
+
   // Show scroll-to-top button after scrolling down
   useEffect(() => {
     const handleScroll = () => {
@@ -50,6 +55,12 @@ const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
         setShowScrollTop(false);
       }
     };
+
+    const fetchCompanyInfo = async () => {
+      const {data: info} = await sanityFetch({query: INFO_QUERY});
+      setCompanyInfo(info);
+    }
+    fetchCompanyInfo();
 
     window.addEventListener("scroll", handleScroll);
     return () => {

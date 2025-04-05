@@ -1,8 +1,9 @@
+
+import PageHeader from "@/components/shared/page-header";
 import SquareGallery from "@/components/gallery/square-gallery";
 import { sanityFetch } from "@/sanity/lib/live";
 import GalleryHeader from "@/components/gallery/gallery-header";
 import { GalleryItem } from "@/types";
-import { urlFor } from "@/sanity/lib/image";
 
 const GALLERY_QUERY = `*[_type == "galleryImage"]`;
 
@@ -18,7 +19,7 @@ const Gallery = async () => {
         backgroundImage="https://images.unsplash.com/photo-1518998053901-5348d3961a04?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       /> */}
       <GalleryHeader
-        slideshowImages={galleryData.map((image: GalleryItem) => urlFor(image.src).url())}
+        slideshowImages={galleryData.map((image: GalleryItem) => image.src)}
       />
 
       <section className="py-16 bg-white">

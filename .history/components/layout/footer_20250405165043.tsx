@@ -14,9 +14,12 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
+import { sanityFetch } from "@/sanity/lib/live";
+import { defineQuery } from "next-sanity";
 
-
-
+const INFO_QUERY = defineQuery(`*[
+  _type == "companyInformation"][0]`
+)
 
 type CompanyInformation = {
   name?: string;
@@ -26,7 +29,7 @@ type CompanyInformation = {
   address?: string;
 }
 
-const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
+const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Scroll to top function
@@ -41,6 +44,8 @@ const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
 
   const formattedPhone = phoneNumber.replace(/\D/g, '');
 
+  const [companyInfo, setCompanyInfo] = useState<CompanyInformation>({})
+
   // Show scroll-to-top button after scrolling down
   useEffect(() => {
     const handleScroll = () => {
@@ -50,6 +55,12 @@ const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
         setShowScrollTop(false);
       }
     };
+
+    const fetchCompanyInfo = async () => {
+      const {data: info} = await sanityFetch({query: INFO_QUERY});
+      setCompanyInfo(info);
+    }
+    fetchCompanyInfo();
 
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -203,6 +214,46 @@ const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
                   </a>
                 </li>
               ))}
+
+              <li className="flex items-center gap-3 group">
+                <Phone className="text-primary h-5 w-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                <a 
+                  href="tel:+917428487870" 
+                  className="text-neutral-300 hover:text-white transition-colors duration-300"
+                >
+                  0120-4959379
+                </a>
+              </li>
+
+              <li className="flex items-center gap-3 group">
+                <Phone className="text-primary h-5 w-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                <a 
+                  href="tel:+917428487870" 
+                  className="text-neutral-300 hover:text-white transition-colors duration-300"
+                >
+                  +918010087998
+                </a>
+              </li>
+
+              <li className="flex items-center gap-3 group">
+                <Phone className="text-primary h-5 w-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                <a 
+                  href="tel:+917428487870" 
+                  className="text-neutral-300 hover:text-white transition-colors duration-300"
+                >
+                  +919643079162
+                </a>
+              </li>
+
+              <li className="flex items-center gap-3 group">
+                <Phone className="text-primary h-5 w-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                <a 
+                  href="tel:+917428487870" 
+                  className="text-neutral-300 hover:text-white transition-colors duration-300"
+                >
+                  +917982197942
+                </a>
+              </li>
 
               {/* MAIL */}
               <li className="flex items-center gap-3 group">

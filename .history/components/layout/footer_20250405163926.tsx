@@ -15,18 +15,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
-
-
-
-type CompanyInformation = {
-  name?: string;
-  description?: string;
-  contactEmails?: string[];
-  phones?: string[];
-  address?: string;
-}
-
-const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
+const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Scroll to top function
@@ -40,6 +29,8 @@ const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
   const phoneNumber = "+917428487870"; // Replace with your phone number
 
   const formattedPhone = phoneNumber.replace(/\D/g, '');
+
+  const [companyInfo, setCompanyInfo] = useState({})
 
   // Show scroll-to-top button after scrolling down
   useEffect(() => {
@@ -190,21 +181,15 @@ const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
                   Plot No.047, 1st floor, Block-F, Surajpur, Site-B, Industrial Area, Greater Noida, Gautam Buddha Nagar, U.P
                 </span>
               </li>
-              
-              {/* PHONE NUMBERS */}
-              {companyInfo.phones?.map((phone, index) => (
-                <li key={index} className="flex items-center gap-3 group">
-                  <Phone className="text-primary h-5 w-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                  <a 
-                    href={`tel:${phone}`} 
-                    className="text-neutral-300 hover:text-white transition-colors duration-300"
-                  >
-                    {phone}
-                  </a>
-                </li>
-              ))}
-
-              {/* MAIL */}
+              <li className="flex items-center gap-3 group">
+                <Phone className="text-primary h-5 w-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                <a 
+                  href="tel:+917428487870" 
+                  className="text-neutral-300 hover:text-white transition-colors duration-300"
+                >
+                  +91 7428487870
+                </a>
+              </li>
               <li className="flex items-center gap-3 group">
                 <Mail className="text-primary h-5 w-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
                 <a 
@@ -220,7 +205,7 @@ const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
                   href="mailto:info@evergeeneclab.com" 
                   className="text-neutral-300 hover:text-white transition-colors duration-300"
                 >
-                  evergreenlab03@gmail.com
+                  info@evergeeneclab.com
                 </a>
               </li>
               <li className="flex items-center gap-3 group">

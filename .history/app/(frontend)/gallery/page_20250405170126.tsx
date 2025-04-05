@@ -1,3 +1,5 @@
+
+import PageHeader from "@/components/shared/page-header";
 import SquareGallery from "@/components/gallery/square-gallery";
 import { sanityFetch } from "@/sanity/lib/live";
 import GalleryHeader from "@/components/gallery/gallery-header";
