@@ -187,7 +187,7 @@ const Footer = ({companyInfo}:{companyInfo:CompanyInformation}) => {
               <li className="flex items-start gap-3 group">
                 <MapPin className="text-primary mt-1 h-5 w-5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
                 <span className="text-neutral-300 group-hover:text-white transition-colors duration-300">
-                  {companyInfo.address}
+                  Plot No.047, 1st floor, Block-F, Surajpur, Site-B, Industrial Area, Greater Noida, Gautam Buddha Nagar, U.P
                 </span>
               </li>
               
