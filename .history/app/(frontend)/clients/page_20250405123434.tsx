@@ -192,7 +192,7 @@ const Clients = async () => {
                 <div
                   
                 >
-                  <Button variant="outline" className="rounded-full px-8 py-4 h-auto border-2 border-primary text-primary hover:bg-primary/5">
+                  <Button variant="outline" className="rounded-full px-8 py-4 h-auto border-2 border-primary/80 text-primary hover:bg-primary/5">
                     Contact Us
                   </Button>
                 </div>

@@ -80,7 +80,6 @@ const Footer = () => {
                 href={`https://wa.me/${formattedPhone}?text='Hi, I want to enquire about some services.'`} 
                 className="h-10 w-10 rounded-full bg-primary/10 hover:bg-primary hover:scale-110 flex items-center justify-center transition-all duration-300"
                 aria-label="Whatsapp"
-                target="_blank"
               >
                 <FaWhatsapp className="h-4 w-4" />
               </a>

@@ -29,7 +29,7 @@ const LuxMonitoring = () => {
       <PageHeader 
         title={service.title} 
         subtitle="Precise illumination assessment services using calibrated equipment for diverse environments."
-        backgroundImage="https://images.unsplash.com/photo-1440595228939-3673bdb622b4?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        backgroundImage="https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
       <section className="py-16 bg-white">

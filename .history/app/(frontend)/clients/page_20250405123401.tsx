@@ -183,7 +183,7 @@ const Clients = async () => {
                 <div
                   
                 >
-                  <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-4 h-auto">
+                  <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 h-auto">
                     Request a Quote <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
@@ -192,7 +192,7 @@ const Clients = async () => {
                 <div
                   
                 >
-                  <Button variant="outline" className="rounded-full px-8 py-4 h-auto border-2 border-primary text-primary hover:bg-primary/5">
+                  <Button variant="outline" className="rounded-full px-8 py-6 h-auto border-2 border-primary/80 text-primary hover:bg-primary/5">
                     Contact Us
                   </Button>
                 </div>
