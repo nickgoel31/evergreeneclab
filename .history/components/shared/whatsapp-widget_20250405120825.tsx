@@ -47,7 +47,7 @@ const WhatsAppWidget = ({
 
   const handleWhatsAppRedirect = () => {
     // Format message for WhatsApp link
-    // const encodedMessage = encodeURIComponent(welcomeMessage);
+    const encodedMessage = encodeURIComponent(welcomeMessage);
     // Format phone number (remove any non-numeric characters)
     const formattedPhone = phoneNumber.replace(/\D/g, '');
     

@@ -47,12 +47,12 @@ const WhatsAppWidget = ({
 
   const handleWhatsAppRedirect = () => {
     // Format message for WhatsApp link
-    // const encodedMessage = encodeURIComponent(welcomeMessage);
+    const encodedMessage = encodeURIComponent(welcomeMessage);
     // Format phone number (remove any non-numeric characters)
     const formattedPhone = phoneNumber.replace(/\D/g, '');
     
     // Open WhatsApp with pre-filled message
-    window.open(`https://wa.me/${formattedPhone}?text=${'Hi, I want to enquire about some services.'}`, '_blank');
+    window.open(`https://wa.me/${formattedPhone}?text=${'Hi I want to enquire about some services.'}`, '_blank');
   };
 
   return (
