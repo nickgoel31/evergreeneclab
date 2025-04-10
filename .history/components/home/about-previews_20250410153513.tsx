@@ -42,7 +42,7 @@ const AboutPreview = () => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-lg hidden md:block">
-              <div className="text-3xl font-bold mb-1">3+</div>
+              <div className="text-3xl font-bold mb-1">2+</div>
               <div className="text-sm">Years of Excellence</div>
             </div>
             <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary-light/10 rounded-full"></div>
@@ -52,7 +52,7 @@ const AboutPreview = () => {
             <h6 className="text-primary font-medium mb-3">ABOUT US</h6>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Environmental Excellence Through Scientific Precision</h2>
             <p className="text-neutral-400 mb-6">
-            Evergreen Enviro Testing LLP has been at the forefront of environmental testing and consultancy since 2022. Our state-of-the-art facilities and expert team deliver accurate, reliable environmental solutions for businesses and communities.
+            Evergreen Enviro Testing LLP has been at the forefront of environmental testing and consultancy since 2021. Our state-of-the-art facilities and expert team deliver accurate, reliable environmental solutions for businesses and communities.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-4 mb-8">

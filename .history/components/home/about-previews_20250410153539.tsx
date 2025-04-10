@@ -42,7 +42,7 @@ const AboutPreview = () => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-lg hidden md:block">
-              <div className="text-3xl font-bold mb-1">3+</div>
+              <div className="text-3xl font-bold mb-1">2+</div>
               <div className="text-sm">Years of Excellence</div>
             </div>
             <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary-light/10 rounded-full"></div>
