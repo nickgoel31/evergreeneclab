@@ -20,12 +20,11 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
         <div className="max-w-3xl">
-          
-          <div className="flex flex-wrap gap-4">
+          <div>
             <h5 className="text-primary-light font-display font-medium mb-4 bg-white/90 rounded-full px-4 py-1 inline-block">
-              Evergreen Enviro Testing LLP
+              Leading Environmental Lab Services
             </h5>
-            <h5 className="text-primary-light font-display font-medium mb-4 bg-white/90 rounded-full px-4 py-1  hidden md:inline-block">
+            <h5 className="text-primary-light font-display font-medium mb-4 bg-white/90 rounded-full px-4 py-1 inline-block">
               Leading Environmental Lab Services
             </h5>
           </div>

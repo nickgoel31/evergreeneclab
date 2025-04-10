@@ -25,7 +25,7 @@ const HeroSection = () => {
             <h5 className="text-primary-light font-display font-medium mb-4 bg-white/90 rounded-full px-4 py-1 inline-block">
               Evergreen Enviro Testing LLP
             </h5>
-            <h5 className="text-primary-light font-display font-medium mb-4 bg-white/90 rounded-full px-4 py-1  hidden md:inline-block">
+            <h5 className="text-primary-light font-display font-medium mb-4 bg-white/90 rounded-full px-4 py-1 inline-block hidden">
               Leading Environmental Lab Services
             </h5>
           </div>
